@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://host.docker.internal:5000/userdb
+    username: postgres
+    password: erkin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create  # Создаст таблицы автоматически
+    show-sql: true
+
+server:
+  port: 8082  # Указываем порт сервера
